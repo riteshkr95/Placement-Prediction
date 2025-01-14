@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px; background-color:black;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:gray;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h2 style="color:white;"><Center>Placement Predict</Center></h2>
+    <form action="/predict" method="POST">
+        
+        <input type="number" id="cpga" name="cgpa" placeholder="Enter cpga" required>
+
+        
+        <input type="number" id="placement_exam_marks" name="placement_exam_marks" placeholder="Enter Exam marks" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    
+</body>
+</html>
